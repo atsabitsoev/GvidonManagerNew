@@ -3,18 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21F29E324D1B7EEE028644B6 /* Pods_GvidonManagerNew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC15A04A8A1ED47762B95CBB /* Pods_GvidonManagerNew.framework */; };
+		583259186D3F9300C9CF59AA /* Pods_GvidonManagerNew_GvidonManagerNewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D06B414F36DD6E527FDA83 /* Pods_GvidonManagerNew_GvidonManagerNewUITests.framework */; };
 		AC2708842448B77400F322F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708832448B77400F322F8 /* AppDelegate.swift */; };
 		AC2708862448B77400F322F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708852448B77400F322F8 /* SceneDelegate.swift */; };
-		AC2708882448B77400F322F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708872448B77400F322F8 /* ViewController.swift */; };
-		AC27088B2448B77400F322F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC2708892448B77400F322F8 /* Main.storyboard */; };
 		AC27088D2448B77400F322F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC27088C2448B77400F322F8 /* Assets.xcassets */; };
 		AC2708902448B77400F322F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC27088E2448B77400F322F8 /* LaunchScreen.storyboard */; };
 		AC27089B2448B77500F322F8 /* GvidonManagerNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC27089A2448B77500F322F8 /* GvidonManagerNewTests.swift */; };
 		AC2708A62448B77500F322F8 /* GvidonManagerNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708A52448B77500F322F8 /* GvidonManagerNewUITests.swift */; };
+		AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */; };
+		AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */; };
+		AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */; };
+		AC58E5332449017800A94292 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC58E5322449017800A94292 /* .gitignore */; };
+		AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86BD042448D4DA00F22F19 /* UIColors.swift */; };
+		AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */; };
+		AC8DC0F52448E4FD009320CE /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */; };
+		AC8DC0F62448E501009320CE /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F22448E4ED009320CE /* SF-Pro-Text-Bold.otf */; };
+		AC8DC0F82448E50A009320CE /* SF-Pro-Text-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F72448E50A009320CE /* SF-Pro-Text-Light.otf */; };
+		AC8DC0FA2448E514009320CE /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F92448E514009320CE /* SF-Pro-Text-Medium.otf */; };
+		AC8DC0FC2448E51B009320CE /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0FB2448E51B009320CE /* SF-Pro-Text-Regular.otf */; };
+		AC8DC0FE2448E523009320CE /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0FD2448E523009320CE /* SF-Pro-Text-Semibold.otf */; };
+		AC8DC1002448E529009320CE /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0FF2448E529009320CE /* SF-Pro-Text-Thin.otf */; };
+		AC8DC1022448E531009320CE /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC1012448E531009320CE /* SF-Pro-Text-Ultralight.otf */; };
+		ACC02C7F2448F27800EED516 /* EnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */; };
+		ACC02C822448F80D00EED516 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C812448F80D00EED516 /* ConfirmButton.swift */; };
+		ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */; };
+		ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C852448FD1400EED516 /* TitleLabel.swift */; };
+		BBAA1B345ACF6DD2D0BC3817 /* Pods_GvidonManagerNewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C547206DA54767C41378436D /* Pods_GvidonManagerNewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A9830EA64A091666AF16FC7 /* Pods-GvidonManagerNew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNew.release.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNew/Pods-GvidonManagerNew.release.xcconfig"; sourceTree = "<group>"; };
+		543E0620577C114066009B46 /* Pods-GvidonManagerNew-GvidonManagerNewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNew-GvidonManagerNewUITests.debug.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNew-GvidonManagerNewUITests/Pods-GvidonManagerNew-GvidonManagerNewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D251C0E2F568D02EFEBF9B4 /* Pods-GvidonManagerNewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNewTests.debug.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNewTests/Pods-GvidonManagerNewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6449DBD6500D38B1C77AA0B8 /* Pods-GvidonManagerNewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNewTests.release.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNewTests/Pods-GvidonManagerNewTests.release.xcconfig"; sourceTree = "<group>"; };
+		71585E06A7AA2C8A530FDB0B /* Pods-GvidonManagerNew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNew.debug.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNew/Pods-GvidonManagerNew.debug.xcconfig"; sourceTree = "<group>"; };
+		A3D06B414F36DD6E527FDA83 /* Pods_GvidonManagerNew_GvidonManagerNewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GvidonManagerNew_GvidonManagerNewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2708802448B77400F322F8 /* GvidonManagerNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GvidonManagerNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2708832448B77400F322F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC2708852448B77400F322F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC2708872448B77400F322F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC27088A2448B77400F322F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC27088C2448B77400F322F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC27088F2448B77400F322F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC2708912448B77400F322F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +72,27 @@
 		AC2708A12448B77500F322F8 /* GvidonManagerNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GvidonManagerNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC2708A52448B77500F322F8 /* GvidonManagerNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GvidonManagerNewUITests.swift; sourceTree = "<group>"; };
 		AC2708A72448B77500F322F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
+		AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneController.swift; sourceTree = "<group>"; };
+		AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneView.swift; sourceTree = "<group>"; };
+		AC58E5322449017800A94292 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AC86BD042448D4DA00F22F19 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
+		AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
+		AC8DC0F22448E4ED009320CE /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
+		AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Heavy.otf"; sourceTree = "<group>"; };
+		AC8DC0F72448E50A009320CE /* SF-Pro-Text-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Light.otf"; sourceTree = "<group>"; };
+		AC8DC0F92448E514009320CE /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		AC8DC0FB2448E51B009320CE /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		AC8DC0FD2448E523009320CE /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		AC8DC0FF2448E529009320CE /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
+		AC8DC1012448E531009320CE /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
+		ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneView.swift; sourceTree = "<group>"; };
+		ACC02C812448F80D00EED516 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
+		ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneTextField.swift; sourceTree = "<group>"; };
+		ACC02C852448FD1400EED516 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
+		C547206DA54767C41378436D /* Pods_GvidonManagerNewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GvidonManagerNewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC15A04A8A1ED47762B95CBB /* Pods_GvidonManagerNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GvidonManagerNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E308C6CE8E43B914391E2AAF /* Pods-GvidonManagerNew-GvidonManagerNewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GvidonManagerNew-GvidonManagerNewUITests.release.xcconfig"; path = "Target Support Files/Pods-GvidonManagerNew-GvidonManagerNewUITests/Pods-GvidonManagerNew-GvidonManagerNewUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F29E324D1B7EEE028644B6 /* Pods_GvidonManagerNew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAA1B345ACF6DD2D0BC3817 /* Pods_GvidonManagerNewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +116,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583259186D3F9300C9CF59AA /* Pods_GvidonManagerNew_GvidonManagerNewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E8EA013603E9685B6A7E6EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC15A04A8A1ED47762B95CBB /* Pods_GvidonManagerNew.framework */,
+				A3D06B414F36DD6E527FDA83 /* Pods_GvidonManagerNew_GvidonManagerNewUITests.framework */,
+				C547206DA54767C41378436D /* Pods_GvidonManagerNewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC2708772448B77300F322F8 = {
 			isa = PBXGroup;
 			children = (
+				AC58E5322449017800A94292 /* .gitignore */,
 				AC2708822448B77400F322F8 /* GvidonManagerNew */,
 				AC2708992448B77500F322F8 /* GvidonManagerNewTests */,
 				AC2708A42448B77500F322F8 /* GvidonManagerNewUITests */,
 				AC2708812448B77400F322F8 /* Products */,
+				DE31F791DEFD2DD357A753E5 /* Pods */,
+				6E8EA013603E9685B6A7E6EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +159,12 @@
 		AC2708822448B77400F322F8 /* GvidonManagerNew */ = {
 			isa = PBXGroup;
 			children = (
-				AC2708832448B77400F322F8 /* AppDelegate.swift */,
-				AC2708852448B77400F322F8 /* SceneDelegate.swift */,
-				AC2708872448B77400F322F8 /* ViewController.swift */,
-				AC2708892448B77400F322F8 /* Main.storyboard */,
-				AC27088C2448B77400F322F8 /* Assets.xcassets */,
-				AC27088E2448B77400F322F8 /* LaunchScreen.storyboard */,
+				AC86BD032448D4C200F22F19 /* Extentions */,
+				ACC02C802448F7CC00EED516 /* UIElements */,
+				AC2708B52448B7C800F322F8 /* Views */,
+				AC2708B42448B7BD00F322F8 /* Controllers */,
+				AC2708B62448B7CC00F322F8 /* Models */,
+				AC2708B32448B7A700F322F8 /* SuppotingFiles */,
 				AC2708912448B77400F322F8 /* Info.plist */,
 			);
 			path = GvidonManagerNew;
@@ -128,6 +188,114 @@
 			path = GvidonManagerNewUITests;
 			sourceTree = "<group>";
 		};
+		AC2708B32448B7A700F322F8 /* SuppotingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DC0F02448E488009320CE /* Fonts */,
+				AC2708832448B77400F322F8 /* AppDelegate.swift */,
+				AC2708852448B77400F322F8 /* SceneDelegate.swift */,
+				AC27088C2448B77400F322F8 /* Assets.xcassets */,
+				AC27088E2448B77400F322F8 /* LaunchScreen.storyboard */,
+			);
+			path = SuppotingFiles;
+			sourceTree = "<group>";
+		};
+		AC2708B42448B7BD00F322F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC2708B92448B83300F322F8 /* Auth */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AC2708B52448B7C800F322F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DC1032448F030009320CE /* EnterPhone */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC2708B62448B7CC00F322F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC2708B92448B83300F322F8 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */,
+				AC8DC1042448F041009320CE /* EnterPhone */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AC86BD032448D4C200F22F19 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				AC86BD042448D4DA00F22F19 /* UIColors.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		AC8DC0F02448E488009320CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AC8DC0F72448E50A009320CE /* SF-Pro-Text-Light.otf */,
+				AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */,
+				AC8DC0F22448E4ED009320CE /* SF-Pro-Text-Bold.otf */,
+				AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */,
+				AC8DC0F92448E514009320CE /* SF-Pro-Text-Medium.otf */,
+				AC8DC0FB2448E51B009320CE /* SF-Pro-Text-Regular.otf */,
+				AC8DC0FD2448E523009320CE /* SF-Pro-Text-Semibold.otf */,
+				AC8DC0FF2448E529009320CE /* SF-Pro-Text-Thin.otf */,
+				AC8DC1012448E531009320CE /* SF-Pro-Text-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AC8DC1032448F030009320CE /* EnterPhone */ = {
+			isa = PBXGroup;
+			children = (
+				ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */,
+				AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */,
+			);
+			path = EnterPhone;
+			sourceTree = "<group>";
+		};
+		AC8DC1042448F041009320CE /* EnterPhone */ = {
+			isa = PBXGroup;
+			children = (
+				AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */,
+			);
+			path = EnterPhone;
+			sourceTree = "<group>";
+		};
+		ACC02C802448F7CC00EED516 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				ACC02C852448FD1400EED516 /* TitleLabel.swift */,
+				ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */,
+				ACC02C812448F80D00EED516 /* ConfirmButton.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		DE31F791DEFD2DD357A753E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71585E06A7AA2C8A530FDB0B /* Pods-GvidonManagerNew.debug.xcconfig */,
+				4A9830EA64A091666AF16FC7 /* Pods-GvidonManagerNew.release.xcconfig */,
+				543E0620577C114066009B46 /* Pods-GvidonManagerNew-GvidonManagerNewUITests.debug.xcconfig */,
+				E308C6CE8E43B914391E2AAF /* Pods-GvidonManagerNew-GvidonManagerNewUITests.release.xcconfig */,
+				5D251C0E2F568D02EFEBF9B4 /* Pods-GvidonManagerNewTests.debug.xcconfig */,
+				6449DBD6500D38B1C77AA0B8 /* Pods-GvidonManagerNewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +303,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC2708AA2448B77500F322F8 /* Build configuration list for PBXNativeTarget "GvidonManagerNew" */;
 			buildPhases = (
+				D1AB75CF7467936870124C7A /* [CP] Check Pods Manifest.lock */,
 				AC27087C2448B77400F322F8 /* Sources */,
 				AC27087D2448B77400F322F8 /* Frameworks */,
 				AC27087E2448B77400F322F8 /* Resources */,
+				226B667DE63D3E494DF637DB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +322,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC2708AD2448B77500F322F8 /* Build configuration list for PBXNativeTarget "GvidonManagerNewTests" */;
 			buildPhases = (
+				AB79C687F810DBC1818E0B92 /* [CP] Check Pods Manifest.lock */,
 				AC2708922448B77500F322F8 /* Sources */,
 				AC2708932448B77500F322F8 /* Frameworks */,
 				AC2708942448B77500F322F8 /* Resources */,
@@ -170,9 +341,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC2708B02448B77500F322F8 /* Build configuration list for PBXNativeTarget "GvidonManagerNewUITests" */;
 			buildPhases = (
+				9C8ED2171D2BA6380DFDE259 /* [CP] Check Pods Manifest.lock */,
 				AC27089D2448B77500F322F8 /* Sources */,
 				AC27089E2448B77500F322F8 /* Frameworks */,
 				AC27089F2448B77500F322F8 /* Resources */,
+				076B0D15EAE6392139547507 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +406,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC2708902448B77400F322F8 /* LaunchScreen.storyboard in Resources */,
+				AC8DC0F62448E501009320CE /* SF-Pro-Text-Bold.otf in Resources */,
+				AC8DC0F82448E50A009320CE /* SF-Pro-Text-Light.otf in Resources */,
+				AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */,
+				AC58E5332449017800A94292 /* .gitignore in Resources */,
 				AC27088D2448B77400F322F8 /* Assets.xcassets in Resources */,
-				AC27088B2448B77400F322F8 /* Main.storyboard in Resources */,
+				AC8DC0FA2448E514009320CE /* SF-Pro-Text-Medium.otf in Resources */,
+				AC8DC1022448E531009320CE /* SF-Pro-Text-Ultralight.otf in Resources */,
+				AC8DC1002448E529009320CE /* SF-Pro-Text-Thin.otf in Resources */,
+				AC8DC0FE2448E523009320CE /* SF-Pro-Text-Semibold.otf in Resources */,
+				AC8DC0FC2448E51B009320CE /* SF-Pro-Text-Regular.otf in Resources */,
+				AC8DC0F52448E4FD009320CE /* SF-Pro-Text-Black.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +436,124 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		076B0D15EAE6392139547507 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew-GvidonManagerNewUITests/Pods-GvidonManagerNew-GvidonManagerNewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew-GvidonManagerNewUITests/Pods-GvidonManagerNew-GvidonManagerNewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew-GvidonManagerNewUITests/Pods-GvidonManagerNew-GvidonManagerNewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		226B667DE63D3E494DF637DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew/Pods-GvidonManagerNew-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew/Pods-GvidonManagerNew-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GvidonManagerNew/Pods-GvidonManagerNew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C8ED2171D2BA6380DFDE259 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GvidonManagerNew-GvidonManagerNewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB79C687F810DBC1818E0B92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GvidonManagerNewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1AB75CF7467936870124C7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GvidonManagerNew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC27087C2448B77400F322F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC2708882448B77400F322F8 /* ViewController.swift in Sources */,
+				ACC02C822448F80D00EED516 /* ConfirmButton.swift in Sources */,
 				AC2708842448B77400F322F8 /* AppDelegate.swift in Sources */,
 				AC2708862448B77400F322F8 /* SceneDelegate.swift in Sources */,
+				ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */,
+				ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */,
+				ACC02C7F2448F27800EED516 /* EnterPhoneView.swift in Sources */,
+				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
+				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
+				AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */,
+				AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +589,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AC2708892448B77400F322F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC27088A2448B77400F322F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC27088E2448B77400F322F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,11 +716,13 @@
 		};
 		AC2708AB2448B77500F322F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71585E06A7AA2C8A530FDB0B /* Pods-GvidonManagerNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = GvidonManagerNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,17 +730,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.GvidonManagerNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		AC2708AC2448B77500F322F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A9830EA64A091666AF16FC7 /* Pods-GvidonManagerNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = GvidonManagerNew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,12 +750,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.GvidonManagerNew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		AC2708AE2448B77500F322F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D251C0E2F568D02EFEBF9B4 /* Pods-GvidonManagerNewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +779,7 @@
 		};
 		AC2708AF2448B77500F322F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6449DBD6500D38B1C77AA0B8 /* Pods-GvidonManagerNewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +802,7 @@
 		};
 		AC2708B12448B77500F322F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 543E0620577C114066009B46 /* Pods-GvidonManagerNew-GvidonManagerNewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +823,7 @@
 		};
 		AC2708B22448B77500F322F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E308C6CE8E43B914391E2AAF /* Pods-GvidonManagerNew-GvidonManagerNewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
