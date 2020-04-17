@@ -50,7 +50,7 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     //MARK: SETUP
     private func setupTitle() {
         addSubview(labTitle)
-        labTitle.text = "Введите номер телефона"
+        labTitle.text = "Введите номер\nтелефона"
     }
     
     private func setupTfPhone() {
@@ -69,10 +69,10 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     //MARK: CONSTRAINTS
     private func setLabTitleConstraints() {
         labTitle.snp.makeConstraints { (make) in
-            make.top.equalToSuperview().offset(60 + safeAreaInsets.top)
+            make.top.equalToSuperview().offset(40 + safeAreaInsets.top)
             make.leading.equalToSuperview().offset(24)
             make.trailing.equalToSuperview().offset(-24)
-            make.height.equalTo(50)
+            make.height.equalTo(90)
         }
     }
     

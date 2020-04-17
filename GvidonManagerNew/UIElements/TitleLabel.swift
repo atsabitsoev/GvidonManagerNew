@@ -26,7 +26,8 @@ final class TitleLabel: UILabel {
         textColor = .blueDarkTitleColor
         textAlignment = .center
         adjustsFontSizeToFitWidth = true
-        font = UIFont(name: "SFProText-Semibold", size: 18)!
+        numberOfLines = 0
+        font = UIFont(name: "SFProText-Semibold", size: 24)!
     }
 
 }
