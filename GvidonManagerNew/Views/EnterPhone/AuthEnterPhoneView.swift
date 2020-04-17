@@ -55,10 +55,13 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     private func setupTfPhone() {
         addSubview(tfPhone)
+        let accessoryView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
+        accessoryView.addSubview(butSendCode)
+        tfPhone.inputAccessoryView = accessoryView
     }
     
     private func setupButSendCode() {
-        addSubview(butSendCode)
+        //addSubview(butSendCode)
         butSendCode.setTitle("Подтвердить", for: .normal)
         butSendCode.addTarget(self, action: #selector(butSendCodeTapped), for: .touchUpInside)
     }
@@ -85,10 +88,10 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     private func setButSendCodeConstraints() {
         butSendCode.snp.makeConstraints { (make) in
-            make.top.equalTo(tfPhone.snp.bottom).offset(58)
             make.height.equalTo(60)
             make.width.equalTo(236)
             make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
     }
     
