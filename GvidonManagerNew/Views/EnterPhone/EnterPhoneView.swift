@@ -12,8 +12,10 @@ import Foundation
 protocol EnterPhoneView {
     func configureView(controller: EnterPhoneViewController)
     func activateEnteringPhone()
+    func enableButSendCode(_ enabled: Bool)
 }
 
 protocol EnterPhoneViewController {
-    func phoneEntered(phone: String)
+    func phoneChanged(isValid: Bool)
+    func butConfirmTapped(phone: String)
 }

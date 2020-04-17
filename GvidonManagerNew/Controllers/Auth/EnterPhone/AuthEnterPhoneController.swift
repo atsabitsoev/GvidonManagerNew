@@ -24,7 +24,7 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        enterPhoneView.enableButSendCode(false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +34,11 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     
     
     //MARK: Veiw Actions
-    func phoneEntered(phone: String) {
+    func phoneChanged(isValid: Bool) {
+        enterPhoneView.enableButSendCode(isValid)
+    }
+    
+    func butConfirmTapped(phone: String) {
         print(phone)
     }
     

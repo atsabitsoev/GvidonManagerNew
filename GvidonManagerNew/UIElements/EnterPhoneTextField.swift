@@ -31,8 +31,8 @@ final class EnterPhoneTextField: PhoneNumberTextField {
         textColor = .white
         font = UIFont(name: "SFProText-Semibold", size: 18)!
         attributedPlaceholder = NSMutableAttributedString(string: "(000) 000-0000",
-                                                                  attributes: [NSAttributedString.Key.font : font!,
-                                                                               NSAttributedString.Key.foregroundColor: UIColor.white.withAlphaComponent(0.5)])
+                                                          attributes: [NSAttributedString.Key.font : font!,
+                                                                       NSAttributedString.Key.foregroundColor: UIColor.white.withAlphaComponent(0.5)])
         backgroundColor = .rose
         tintColor = .blueButtonColor
         layer.cornerRadius = 21

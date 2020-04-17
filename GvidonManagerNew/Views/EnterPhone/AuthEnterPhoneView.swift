@@ -46,6 +46,16 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
         tfPhone.becomeFirstResponder()
     }
     
+    func enableButSendCode(_ enable: Bool) {
+        if enable {
+            butSendCode.alpha = 1
+            butSendCode.isEnabled = true
+        } else {
+            butSendCode.alpha = 0.5
+            butSendCode.isEnabled = false
+        }
+    }
+    
     
     //MARK: SETUP
     private func setupTitle() {
@@ -55,6 +65,7 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     private func setupTfPhone() {
         addSubview(tfPhone)
+        tfPhone.addTarget(self, action: #selector(tfPhoneChanged), for: .editingChanged)
         let accessoryView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 100))
         accessoryView.addSubview(butSendCode)
         tfPhone.inputAccessoryView = accessoryView
@@ -96,9 +107,13 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     
     //MARK: User Actions
+    @objc private func tfPhoneChanged() {
+        controller?.phoneChanged(isValid: tfPhone.isValidNumber)
+    }
+    
     @objc private func butSendCodeTapped() {
         guard let phone = tfPhone.text else { return }
-        controller?.phoneEntered(phone: phoneCode + " " + phone)
+        controller?.butConfirmTapped(phone: phoneCode + " " + phone)
     }
     
 
