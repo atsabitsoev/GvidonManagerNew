@@ -9,7 +9,7 @@
 import UIKit
 
 
-final class AuthEnterPhoneController: UIViewController, EnterPhoneViewDelegate {
+final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController {
     
     
     private var enterPhoneView: (EnterPhoneView & UIView)!
@@ -18,7 +18,7 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewDelegate {
     //MARK: Life Cycle
     override func loadView() {
         enterPhoneView = AuthEnterPhoneView()
-        enterPhoneView.configureView(delegate: self)
+        enterPhoneView.configureView(controller: self)
         view = enterPhoneView
     }
     

@@ -10,10 +10,10 @@ import Foundation
 
 
 protocol EnterPhoneView {
-    func configureView(delegate: EnterPhoneViewDelegate)
+    func configureView(controller: EnterPhoneViewController)
     func activateEnteringPhone()
 }
 
-protocol EnterPhoneViewDelegate {
+protocol EnterPhoneViewController {
     func phoneEntered(phone: String)
 }

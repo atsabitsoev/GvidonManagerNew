@@ -13,7 +13,7 @@ import SnapKit
 final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     
-    private var delegate: EnterPhoneViewDelegate?
+    private var controller: EnterPhoneViewController?
     private let phoneCode  = "+7"
     
     
@@ -24,8 +24,8 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     
     //MARK: LIFE CYCLE
-    func configureView(delegate: EnterPhoneViewDelegate) {
-        self.delegate = delegate
+    func configureView(controller: EnterPhoneViewController) {
+        self.controller = controller
         backgroundColor = .backgroundBlueLight
         setNeedsUpdateConstraints()
         setupTitle()
@@ -96,7 +96,7 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     //MARK: User Actions
     @objc private func butSendCodeTapped() {
         guard let phone = tfPhone.text else { return }
-        delegate?.phoneEntered(phone: phoneCode + " " + phone)
+        controller?.phoneEntered(phone: phoneCode + " " + phone)
     }
     
 
