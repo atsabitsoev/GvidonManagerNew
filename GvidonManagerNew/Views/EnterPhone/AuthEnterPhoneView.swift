@@ -61,7 +61,6 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     }
     
     private func setupButSendCode() {
-        //addSubview(butSendCode)
         butSendCode.setTitle("Подтвердить", for: .normal)
         butSendCode.addTarget(self, action: #selector(butSendCodeTapped), for: .touchUpInside)
     }
