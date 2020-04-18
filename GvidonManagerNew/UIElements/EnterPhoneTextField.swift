@@ -36,6 +36,20 @@ final class EnterPhoneTextField: PhoneNumberTextField {
         backgroundColor = .rose
         tintColor = .blueButtonColor
         layer.cornerRadius = 21
+        setupShadow()
+        let leftView = getLeftView()
+        self.leftView = leftView
+    }
+    
+    
+    private func setupShadow() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowRadius = 10
+        layer.shadowOpacity = 0.3
+        layer.shadowOffset = CGSize(width: 0, height: 2)
+    }
+    
+    private func getLeftView() -> UIView {
         let leftView = UIView(frame: CGRect(x: 0, y: 0, width: 59, height: 42))
         let whiteRoundedView = UIView(frame: leftView.bounds.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 8)))
         whiteRoundedView.backgroundColor = .white
@@ -47,7 +61,7 @@ final class EnterPhoneTextField: PhoneNumberTextField {
         whiteRoundedView.addSubview(labPhoneCode)
         leftView.addSubview(whiteRoundedView)
         leftViewMode = .always
-        self.leftView = leftView
+        return leftView
     }
 
 }
