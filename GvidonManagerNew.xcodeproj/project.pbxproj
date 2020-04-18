@@ -29,7 +29,10 @@
 		AC8DC0FE2448E523009320CE /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0FD2448E523009320CE /* SF-Pro-Text-Semibold.otf */; };
 		AC8DC1002448E529009320CE /* SF-Pro-Text-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0FF2448E529009320CE /* SF-Pro-Text-Thin.otf */; };
 		AC8DC1022448E531009320CE /* SF-Pro-Text-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC1012448E531009320CE /* SF-Pro-Text-Ultralight.otf */; };
-		ACC02C7F2448F27800EED516 /* EnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */; };
+		AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */; };
+		AC99F3DF244B3CAE008CBCC3 /* AuthCheckCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */; };
+		AC99F3E1244B3E36008CBCC3 /* AuthCheckCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */; };
+		ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C7E2448F27800EED516 /* AuthProtocols.swift */; };
 		ACC02C822448F80D00EED516 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C812448F80D00EED516 /* ConfirmButton.swift */; };
 		ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */; };
 		ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C852448FD1400EED516 /* TitleLabel.swift */; };
@@ -86,7 +89,10 @@
 		AC8DC0FD2448E523009320CE /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
 		AC8DC0FF2448E529009320CE /* SF-Pro-Text-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Thin.otf"; sourceTree = "<group>"; };
 		AC8DC1012448E531009320CE /* SF-Pro-Text-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Ultralight.otf"; sourceTree = "<group>"; };
-		ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneView.swift; sourceTree = "<group>"; };
+		AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowTextField.swift; sourceTree = "<group>"; };
+		AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCheckCodeController.swift; sourceTree = "<group>"; };
+		AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCheckCodeView.swift; sourceTree = "<group>"; };
+		ACC02C7E2448F27800EED516 /* AuthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
 		ACC02C812448F80D00EED516 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneTextField.swift; sourceTree = "<group>"; };
 		ACC02C852448FD1400EED516 /* TitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabel.swift; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 			children = (
 				AC86BD032448D4C200F22F19 /* Extentions */,
 				ACC02C802448F7CC00EED516 /* UIElements */,
+				ACD77ABA244B4A5F004092FC /* Protocols */,
 				AC2708B52448B7C800F322F8 /* Views */,
 				AC2708B42448B7BD00F322F8 /* Controllers */,
 				AC2708B62448B7CC00F322F8 /* Models */,
@@ -227,7 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */,
-				AC8DC1042448F041009320CE /* EnterPhone */,
+				AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */,
+				AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -259,16 +267,8 @@
 		AC8DC1032448F030009320CE /* EnterPhone */ = {
 			isa = PBXGroup;
 			children = (
-				ACC02C7E2448F27800EED516 /* EnterPhoneView.swift */,
 				AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */,
-			);
-			path = EnterPhone;
-			sourceTree = "<group>";
-		};
-		AC8DC1042448F041009320CE /* EnterPhone */ = {
-			isa = PBXGroup;
-			children = (
-				AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */,
+				AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */,
 			);
 			path = EnterPhone;
 			sourceTree = "<group>";
@@ -277,10 +277,19 @@
 			isa = PBXGroup;
 			children = (
 				ACC02C852448FD1400EED516 /* TitleLabel.swift */,
+				AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */,
 				ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */,
 				ACC02C812448F80D00EED516 /* ConfirmButton.swift */,
 			);
 			path = UIElements;
+			sourceTree = "<group>";
+		};
+		ACD77ABA244B4A5F004092FC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				ACC02C7E2448F27800EED516 /* AuthProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		DE31F791DEFD2DD357A753E5 /* Pods */ = {
@@ -546,10 +555,13 @@
 			files = (
 				ACC02C822448F80D00EED516 /* ConfirmButton.swift in Sources */,
 				AC2708842448B77400F322F8 /* AppDelegate.swift in Sources */,
+				AC99F3E1244B3E36008CBCC3 /* AuthCheckCodeView.swift in Sources */,
+				AC99F3DF244B3CAE008CBCC3 /* AuthCheckCodeController.swift in Sources */,
 				AC2708862448B77400F322F8 /* SceneDelegate.swift in Sources */,
 				ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */,
 				ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */,
-				ACC02C7F2448F27800EED516 /* EnterPhoneView.swift in Sources */,
+				AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */,
+				ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */,
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
 				AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */,

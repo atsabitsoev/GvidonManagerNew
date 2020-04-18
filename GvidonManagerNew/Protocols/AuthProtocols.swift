@@ -19,3 +19,13 @@ protocol EnterPhoneViewController {
     func phoneChanged(isValid: Bool)
     func butConfirmTapped(phone: String)
 }
+
+
+protocol CheckCodeView: UIView {
+    func configureView(controller: CheckCodeViewController)
+    func activateEnteringCode()
+}
+
+protocol CheckCodeViewController {
+    func codeEntered(code: String)
+}

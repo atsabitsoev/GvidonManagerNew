@@ -33,6 +33,13 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     }
     
     
+    //MARK: Navigation
+    private func showCheckCodeView() {
+        let vc = AuthSendCodeController()
+        self.navigationController?.show(vc, sender: nil)
+    }
+    
+    
     //MARK: Veiw Actions
     func phoneChanged(isValid: Bool) {
         enterPhoneView.enableButSendCode(isValid)
@@ -40,6 +47,7 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     
     func butConfirmTapped(phone: String) {
         print(phone)
+        showCheckCodeView()
     }
     
 }
