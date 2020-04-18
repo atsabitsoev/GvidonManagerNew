@@ -12,7 +12,7 @@ import UIKit
 final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController {
     
     
-    private var enterPhoneView: (EnterPhoneView & UIView)!
+    private var enterPhoneView: EnterPhoneView!
     
     
     //MARK: Life Cycle
