@@ -19,6 +19,7 @@
 		AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */; };
 		AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */; };
 		AC58E5332449017800A94292 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC58E5322449017800A94292 /* .gitignore */; };
+		AC5FF354244B550F00622C72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5FF353244B550F00622C72 /* GoogleService-Info.plist */; };
 		AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86BD042448D4DA00F22F19 /* UIColors.swift */; };
 		AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */; };
 		AC8DC0F52448E4FD009320CE /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */; };
@@ -79,6 +80,7 @@
 		AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneController.swift; sourceTree = "<group>"; };
 		AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneView.swift; sourceTree = "<group>"; };
 		AC58E5322449017800A94292 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AC5FF353244B550F00622C72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC86BD042448D4DA00F22F19 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
 		AC8DC0F22448E4ED009320CE /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
@@ -171,8 +173,10 @@
 				AC2708B52448B7C800F322F8 /* Views */,
 				AC2708B42448B7BD00F322F8 /* Controllers */,
 				AC2708B62448B7CC00F322F8 /* Models */,
+				ACBD2EC5244B4C8C00FB8E26 /* Services */,
 				AC2708B32448B7A700F322F8 /* SuppotingFiles */,
 				AC2708912448B77400F322F8 /* Info.plist */,
+				AC5FF353244B550F00622C72 /* GoogleService-Info.plist */,
 			);
 			path = GvidonManagerNew;
 			sourceTree = "<group>";
@@ -271,6 +275,13 @@
 				AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */,
 			);
 			path = EnterPhone;
+			sourceTree = "<group>";
+		};
+		ACBD2EC5244B4C8C00FB8E26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		ACC02C802448F7CC00EED516 /* UIElements */ = {
@@ -414,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5FF354244B550F00622C72 /* GoogleService-Info.plist in Resources */,
 				AC2708902448B77400F322F8 /* LaunchScreen.storyboard in Resources */,
 				AC8DC0F62448E501009320CE /* SF-Pro-Text-Bold.otf in Resources */,
 				AC8DC0F82448E50A009320CE /* SF-Pro-Text-Light.otf in Resources */,
@@ -739,7 +751,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.GvidonManagerNew;
+				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.gvidonmanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -759,7 +771,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.GvidonManagerNew;
+				PRODUCT_BUNDLE_IDENTIFIER = bitsoev.gvidonmanager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

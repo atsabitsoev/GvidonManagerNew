@@ -8,7 +8,8 @@
 
 import UIKit
 
-class AuthCheckCodeView: UIView, CheckCodeView {
+
+final class AuthCheckCodeView: UIView, CheckCodeView {
     
     
     private var controller: CheckCodeViewController!
@@ -85,11 +86,10 @@ class AuthCheckCodeView: UIView, CheckCodeView {
     
     //MARK: User Actions
     @objc private func tfCodeChanged() {
-        if let code = tfCode.text, code.count == codeLength {
-            controller.codeEntered(code: code)
-        } else {
-            print("Код введен не до конца: \(tfCode.text ?? "")")
+        guard let code = tfCode.text, code.count == codeLength else {
+            return
         }
+        controller.codeEntered(code: code)
     }
 
 }
