@@ -52,6 +52,7 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
         verifPhoneModel.sendCode(to: phone) { (verificationId, errorString) in
             guard let verificationId = verificationId else {
                 print(errorString ?? "Неизвестная ошибка")
+                self.alertError(message: errorString ?? "Что-то пошло не так...")
                 return
             }
             self.showCheckCodeView(verificationId: verificationId)

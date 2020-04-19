@@ -43,6 +43,8 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
         authModel.signIn(verificationId: verificationId, code: code) { (restaurantId, errorString) in
             guard let restaurantId = restaurantId else {
                 print(errorString)
+                self.checkCodeView.clearCode()
+                self.alertError(message: errorString ?? "Что-то пошло не так...")
                 return
             }
             

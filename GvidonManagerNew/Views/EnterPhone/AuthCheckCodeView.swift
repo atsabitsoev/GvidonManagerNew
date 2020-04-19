@@ -83,6 +83,10 @@ final class AuthCheckCodeView: UIView, CheckCodeView {
         tfCode.becomeFirstResponder()
     }
     
+    func clearCode() {
+        self.tfCode.text = ""
+    }
+    
     
     //MARK: User Actions
     @objc private func tfCodeChanged() {
