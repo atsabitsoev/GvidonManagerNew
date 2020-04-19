@@ -15,6 +15,9 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
     private var checkCodeView: CheckCodeView!
     
     
+    var verificationId: String!
+    
+    
     //MARK: LifeCycle
     override func loadView() {
         checkCodeView = AuthCheckCodeView()
@@ -35,6 +38,7 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
     
     //MARK: View Actions
     func codeEntered(code: String) {
+        print(verificationId)
         print(code)
     }
     

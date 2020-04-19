@@ -19,6 +19,8 @@
 		AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */; };
 		AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */; };
 		AC58E5332449017800A94292 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC58E5322449017800A94292 /* .gitignore */; };
+		AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */; };
+		AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37EC244CC96E00FFDADD /* AuthService.swift */; };
 		AC5FF356244B55F400622C72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5FF355244B55F400622C72 /* GoogleService-Info.plist */; };
 		AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86BD042448D4DA00F22F19 /* UIColors.swift */; };
 		AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */; };
@@ -80,6 +82,9 @@
 		AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneController.swift; sourceTree = "<group>"; };
 		AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneView.swift; sourceTree = "<group>"; };
 		AC58E5322449017800A94292 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneModel.swift; sourceTree = "<group>"; };
+		AC5E37EB244CC83400FFDADD /* GvidonManagerNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GvidonManagerNew.entitlements; sourceTree = "<group>"; };
+		AC5E37EC244CC96E00FFDADD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AC5FF355244B55F400622C72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC86BD042448D4DA00F22F19 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
@@ -167,6 +172,7 @@
 		AC2708822448B77400F322F8 /* GvidonManagerNew */ = {
 			isa = PBXGroup;
 			children = (
+				AC5E37EB244CC83400FFDADD /* GvidonManagerNew.entitlements */,
 				AC86BD032448D4C200F22F19 /* Extentions */,
 				ACC02C802448F7CC00EED516 /* UIElements */,
 				ACD77ABA244B4A5F004092FC /* Protocols */,
@@ -230,6 +236,7 @@
 		AC2708B62448B7CC00F322F8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +287,7 @@
 		ACBD2EC5244B4C8C00FB8E26 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AC5E37EC244CC96E00FFDADD /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -574,8 +582,10 @@
 				ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */,
 				AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */,
 				ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */,
+				AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */,
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
+				AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */,
 				AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */,
 				AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */,
 			);
@@ -743,6 +753,7 @@
 			baseConfigurationReference = 71585E06A7AA2C8A530FDB0B /* Pods-GvidonManagerNew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GvidonManagerNew/GvidonManagerNew.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = GvidonManagerNew/Info.plist;
@@ -763,6 +774,7 @@
 			baseConfigurationReference = 4A9830EA64A091666AF16FC7 /* Pods-GvidonManagerNew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GvidonManagerNew/GvidonManagerNew.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 89WB9E7UEU;
 				INFOPLIST_FILE = GvidonManagerNew/Info.plist;

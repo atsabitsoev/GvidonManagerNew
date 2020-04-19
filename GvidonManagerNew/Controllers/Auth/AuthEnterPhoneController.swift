@@ -13,10 +13,12 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     
     
     private var enterPhoneView: EnterPhoneView!
+    private var verifPhoneModel: VerifyPhoneModel!
     
     
     //MARK: Life Cycle
     override func loadView() {
+        verifPhoneModel = VerifyPhoneModel()
         enterPhoneView = AuthEnterPhoneView()
         enterPhoneView.configureView(controller: self)
         view = enterPhoneView
@@ -34,8 +36,9 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     
     
     //MARK: Navigation
-    private func showCheckCodeView() {
+    private func showCheckCodeView(verificationId: String) {
         let vc = AuthSendCodeController()
+        vc.verificationId = verificationId
         self.navigationController?.show(vc, sender: nil)
     }
     
@@ -46,8 +49,13 @@ final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController
     }
     
     func butConfirmTapped(phone: String) {
-        print(phone)
-        showCheckCodeView()
+        verifPhoneModel.sendCode(to: phone) { (verificationId, errorString) in
+            guard let verificationId = verificationId else {
+                print(errorString ?? "Неизвестная ошибка")
+                return
+            }
+            self.showCheckCodeView(verificationId: verificationId)
+        }
     }
     
 }
