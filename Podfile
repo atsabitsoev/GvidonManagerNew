@@ -7,6 +7,9 @@ target 'GvidonManagerNew' do
   # Pods for GvidonManagerNew
   pod 'PhoneNumberKit', '~> 3.1'
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Functions'
 
   target 'GvidonManagerNewTests' do
     inherit! :search_paths

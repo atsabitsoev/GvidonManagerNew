@@ -23,6 +23,7 @@ protocol EnterPhoneViewController {
 
 protocol CheckCodeView: UIView {
     func configureView(controller: CheckCodeViewController)
+    func clearCode()
     func activateEnteringCode()
 }
 
