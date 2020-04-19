@@ -21,6 +21,8 @@
 		AC58E5332449017800A94292 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC58E5322449017800A94292 /* .gitignore */; };
 		AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */; };
 		AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37EC244CC96E00FFDADD /* AuthService.swift */; };
+		AC5E37EF244CD1EE00FFDADD /* AuthorizationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37EE244CD1EE00FFDADD /* AuthorizationModel.swift */; };
+		AC5E37F1244CD32300FFDADD /* UserStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37F0244CD32300FFDADD /* UserStateService.swift */; };
 		AC5FF356244B55F400622C72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5FF355244B55F400622C72 /* GoogleService-Info.plist */; };
 		AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86BD042448D4DA00F22F19 /* UIColors.swift */; };
 		AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */; };
@@ -85,6 +87,8 @@
 		AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneModel.swift; sourceTree = "<group>"; };
 		AC5E37EB244CC83400FFDADD /* GvidonManagerNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GvidonManagerNew.entitlements; sourceTree = "<group>"; };
 		AC5E37EC244CC96E00FFDADD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AC5E37EE244CD1EE00FFDADD /* AuthorizationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationModel.swift; sourceTree = "<group>"; };
+		AC5E37F0244CD32300FFDADD /* UserStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateService.swift; sourceTree = "<group>"; };
 		AC5FF355244B55F400622C72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AC86BD042448D4DA00F22F19 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
@@ -237,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */,
+				AC5E37EE244CD1EE00FFDADD /* AuthorizationModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				AC5E37EC244CC96E00FFDADD /* AuthService.swift */,
+				AC5E37F0244CD32300FFDADD /* UserStateService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -578,6 +584,7 @@
 				AC99F3E1244B3E36008CBCC3 /* AuthCheckCodeView.swift in Sources */,
 				AC99F3DF244B3CAE008CBCC3 /* AuthCheckCodeController.swift in Sources */,
 				AC2708862448B77400F322F8 /* SceneDelegate.swift in Sources */,
+				AC5E37EF244CD1EE00FFDADD /* AuthorizationModel.swift in Sources */,
 				ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */,
 				ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */,
 				AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */,
@@ -586,6 +593,7 @@
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
 				AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */,
+				AC5E37F1244CD32300FFDADD /* UserStateService.swift in Sources */,
 				AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */,
 				AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */,
 			);

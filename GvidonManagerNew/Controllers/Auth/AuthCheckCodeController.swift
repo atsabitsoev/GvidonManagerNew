@@ -13,6 +13,7 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
     
     
     private var checkCodeView: CheckCodeView!
+    private var authModel: AuthorizationModel!
     
     
     var verificationId: String!
@@ -20,6 +21,7 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
     
     //MARK: LifeCycle
     override func loadView() {
+        authModel = AuthorizationModel()
         checkCodeView = AuthCheckCodeView()
         checkCodeView.configureView(controller: self)
         view = checkCodeView
@@ -38,8 +40,15 @@ final class AuthSendCodeController: UIViewController, CheckCodeViewController {
     
     //MARK: View Actions
     func codeEntered(code: String) {
-        print(verificationId)
-        print(code)
+        authModel.signIn(verificationId: verificationId, code: code) { (restaurantId, errorString) in
+            guard let restaurantId = restaurantId else {
+                print(errorString)
+                return
+            }
+            
+            self.authModel.localSignIn(verificationId: self.verificationId, code: code, restaurantId: restaurantId)
+            print("Вход произведен: \nVerificationId: \(self.verificationId)\ncode: \(code)\nRestaurantId: \(restaurantId)")
+        }
     }
     
 }
