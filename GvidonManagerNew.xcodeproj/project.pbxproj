@@ -18,6 +18,7 @@
 		AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */; };
 		AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */; };
 		AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */; };
+		AC292DB62450898900526387 /* OrdersProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC292DB52450898900526387 /* OrdersProtocols.swift */; };
 		AC58E5332449017800A94292 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AC58E5322449017800A94292 /* .gitignore */; };
 		AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */; };
 		AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37EC244CC96E00FFDADD /* AuthService.swift */; };
@@ -84,6 +85,7 @@
 		AC2708BC2448BB5800F322F8 /* AuthNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNavigationController.swift; sourceTree = "<group>"; };
 		AC2708BE2448BBCF00F322F8 /* AuthEnterPhoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneController.swift; sourceTree = "<group>"; };
 		AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEnterPhoneView.swift; sourceTree = "<group>"; };
+		AC292DB52450898900526387 /* OrdersProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersProtocols.swift; sourceTree = "<group>"; };
 		AC58E5322449017800A94292 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AC5E37E9244CC75400FFDADD /* VerifyPhoneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneModel.swift; sourceTree = "<group>"; };
 		AC5E37EB244CC83400FFDADD /* GvidonManagerNew.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GvidonManagerNew.entitlements; sourceTree = "<group>"; };
@@ -234,7 +236,8 @@
 		AC2708B52448B7C800F322F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AC8DC1032448F030009320CE /* EnterPhone */,
+				AC8DC1032448F030009320CE /* Auth */,
+				AC292DB724508B3800526387 /* Orders */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,13 @@
 				AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		AC292DB724508B3800526387 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Orders;
 			sourceTree = "<group>";
 		};
 		AC86BD032448D4C200F22F19 /* Extentions */ = {
@@ -283,13 +293,13 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		AC8DC1032448F030009320CE /* EnterPhone */ = {
+		AC8DC1032448F030009320CE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
 				AC2708C12448C0B100F322F8 /* AuthEnterPhoneView.swift */,
 				AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */,
 			);
-			path = EnterPhone;
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		ACBD2EC5244B4C8C00FB8E26 /* Services */ = {
@@ -316,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				ACC02C7E2448F27800EED516 /* AuthProtocols.swift */,
+				AC292DB52450898900526387 /* OrdersProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -594,6 +605,7 @@
 				AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */,
 				ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */,
 				AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */,
+				AC292DB62450898900526387 /* OrdersProtocols.swift in Sources */,
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
 				AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */,
