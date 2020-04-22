@@ -9,10 +9,10 @@
 import UIKit
 
 
-final class AuthEnterPhoneController: UIViewController, EnterPhoneViewController {
+final class AuthEnterPhoneController: UIViewController, EnterPhoneControllerProtocol {
     
     
-    private var enterPhoneView: EnterPhoneView!
+    private var enterPhoneView: EnterPhoneViewProtocol!
     private var verifPhoneModel: VerifyPhoneModel!
     
     

@@ -9,10 +9,10 @@
 import UIKit
 
 
-protocol OrderListView: UIView {
-    
+protocol OrdersListViewProtocol: UIView {
+    func configureView(controller: OrdersListControllerProtocol)
 }
 
-protocol ActualOrdersController: UIViewController {
+protocol OrdersListControllerProtocol: UIViewController {
     
 }

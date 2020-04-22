@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = AuthNavigationController()
+        window?.rootViewController = OrdersNC(rootViewController: ActualOrdersListController())//AuthNavigationController()
         window?.makeKeyAndVisible()
         
         return true

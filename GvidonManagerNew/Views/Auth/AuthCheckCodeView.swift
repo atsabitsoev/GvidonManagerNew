@@ -9,10 +9,10 @@
 import UIKit
 
 
-final class AuthCheckCodeView: UIView, CheckCodeView {
+final class AuthCheckCodeView: UIView, CheckCodeViewProtocol {
     
     
-    private var controller: CheckCodeViewController!
+    private var controller: CheckCodeControllerProtocol!
     
     
     private var labTitle = TitleLabel()
@@ -22,7 +22,7 @@ final class AuthCheckCodeView: UIView, CheckCodeView {
     private var codeLength: Int = 4
     
     
-    func configureView(controller: CheckCodeViewController) {
+    func configureView(controller: CheckCodeControllerProtocol) {
         self.controller = controller
         backgroundColor = .backgroundBlueLight
         codeLength = 6

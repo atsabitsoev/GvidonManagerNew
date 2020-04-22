@@ -9,10 +9,10 @@
 import UIKit
 
 
-final class AuthSendCodeController: UIViewController, CheckCodeViewController {
+final class AuthSendCodeController: UIViewController, CheckCodeControllerProtocol {
     
     
-    private var checkCodeView: CheckCodeView!
+    private var checkCodeView: CheckCodeViewProtocol!
     private var authModel: AuthorizationModel!
     
     

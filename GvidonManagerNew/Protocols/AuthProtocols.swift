@@ -9,24 +9,24 @@
 import UIKit
 
 
-protocol EnterPhoneView: UIView {
-    func configureView(controller: EnterPhoneViewController)
+protocol EnterPhoneViewProtocol: UIView {
+    func configureView(controller: EnterPhoneControllerProtocol)
     func activateEnteringPhone()
     func enableButSendCode(_ enabled: Bool)
 }
 
-protocol EnterPhoneViewController {
+protocol EnterPhoneControllerProtocol: UIViewController {
     func phoneChanged(isValid: Bool)
     func butConfirmTapped(phone: String)
 }
 
 
-protocol CheckCodeView: UIView {
-    func configureView(controller: CheckCodeViewController)
+protocol CheckCodeViewProtocol: UIView {
+    func configureView(controller: CheckCodeControllerProtocol)
     func clearCode()
     func activateEnteringCode()
 }
 
-protocol CheckCodeViewController {
+protocol CheckCodeControllerProtocol: UIViewController {
     func codeEntered(code: String)
 }

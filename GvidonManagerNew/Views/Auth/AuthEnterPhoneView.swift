@@ -9,10 +9,10 @@
 import UIKit
 
 
-final class AuthEnterPhoneView: UIView, EnterPhoneView {
+final class AuthEnterPhoneView: UIView, EnterPhoneViewProtocol {
     
     
-    private var controller: EnterPhoneViewController?
+    private var controller: EnterPhoneControllerProtocol?
     private let phoneCode  = "+7"
     
     
@@ -23,7 +23,7 @@ final class AuthEnterPhoneView: UIView, EnterPhoneView {
     
     
     //MARK: LIFE CYCLE
-    func configureView(controller: EnterPhoneViewController) {
+    func configureView(controller: EnterPhoneControllerProtocol) {
         self.controller = controller
         backgroundColor = .backgroundBlueLight
         setNeedsUpdateConstraints()
