@@ -12,6 +12,8 @@ import UIKit
 extension UIColor {
     
     static let rose = #colorLiteral(red: 1, green: 0.3684687614, blue: 0.4621680379, alpha: 1)
+    static let yellowStatus = #colorLiteral(red: 1, green: 0.9796115756, blue: 0.2429216802, alpha: 1)
+    
     static let backgroundBlueLight = #colorLiteral(red: 0.8328980207, green: 0.9285151958, blue: 0.9525113702, alpha: 1)
     static let blueDarkTitleColor = #colorLiteral(red: 0, green: 0.1804934442, blue: 0.2582217455, alpha: 1)
     static let blueButtonColor = #colorLiteral(red: 0, green: 0.6629161239, blue: 0.7285619378, alpha: 1)

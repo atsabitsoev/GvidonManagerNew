@@ -43,6 +43,11 @@
 		AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */; };
 		AC99F3DF244B3CAE008CBCC3 /* AuthCheckCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */; };
 		AC99F3E1244B3E36008CBCC3 /* AuthCheckCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */; };
+		ACA5028C2451E4CA002A8053 /* OrderTVItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5028B2451E4CA002A8053 /* OrderTVItem.swift */; };
+		ACA5028E2451E66F002A8053 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5028D2451E66F002A8053 /* OrderCell.swift */; };
+		ACA502902451F498002A8053 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5028F2451F498002A8053 /* DateExtensions.swift */; };
+		ACA5029224522B89002A8053 /* TagLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5029124522B89002A8053 /* TagLabel.swift */; };
+		ACA5029424522EB1002A8053 /* PeopleCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA5029324522EB1002A8053 /* PeopleCountView.swift */; };
 		ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C7E2448F27800EED516 /* AuthProtocols.swift */; };
 		ACC02C822448F80D00EED516 /* ConfirmButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C812448F80D00EED516 /* ConfirmButton.swift */; };
 		ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */; };
@@ -115,6 +120,11 @@
 		AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowTextField.swift; sourceTree = "<group>"; };
 		AC99F3DE244B3CAE008CBCC3 /* AuthCheckCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCheckCodeController.swift; sourceTree = "<group>"; };
 		AC99F3E0244B3E36008CBCC3 /* AuthCheckCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCheckCodeView.swift; sourceTree = "<group>"; };
+		ACA5028B2451E4CA002A8053 /* OrderTVItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTVItem.swift; sourceTree = "<group>"; };
+		ACA5028D2451E66F002A8053 /* OrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
+		ACA5028F2451F498002A8053 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		ACA5029124522B89002A8053 /* TagLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLabel.swift; sourceTree = "<group>"; };
+		ACA5029324522EB1002A8053 /* PeopleCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCountView.swift; sourceTree = "<group>"; };
 		ACC02C7E2448F27800EED516 /* AuthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProtocols.swift; sourceTree = "<group>"; };
 		ACC02C812448F80D00EED516 /* ConfirmButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmButton.swift; sourceTree = "<group>"; };
 		ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneTextField.swift; sourceTree = "<group>"; };
@@ -247,6 +257,8 @@
 			children = (
 				AC8DC1032448F030009320CE /* Auth */,
 				AC292DB724508B3800526387 /* Orders */,
+				ACA502892451E2B2002A8053 /* Cells */,
+				ACA5028A2451E4B3002A8053 /* Entities */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +268,7 @@
 			children = (
 				AC292DC2245092BB00526387 /* Auth */,
 				AC292DC3245092C400526387 /* Orders */,
+				AC292DBF245090CB00526387 /* Entities */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,7 +320,6 @@
 		AC292DC3245092C400526387 /* Orders */ = {
 			isa = PBXGroup;
 			children = (
-				AC292DBF245090CB00526387 /* Entities */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -317,6 +329,7 @@
 			children = (
 				AC86BD042448D4DA00F22F19 /* UIColors.swift */,
 				AC5E37F2244CD82000FFDADD /* UIViewControllerExtensions.swift */,
+				ACA5028F2451F498002A8053 /* DateExtensions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -346,6 +359,22 @@
 			path = Auth;
 			sourceTree = "<group>";
 		};
+		ACA502892451E2B2002A8053 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5028D2451E66F002A8053 /* OrderCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		ACA5028A2451E4B3002A8053 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ACA5028B2451E4CA002A8053 /* OrderTVItem.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		ACBD2EC5244B4C8C00FB8E26 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,6 +388,8 @@
 			isa = PBXGroup;
 			children = (
 				ACC02C852448FD1400EED516 /* TitleLabel.swift */,
+				ACA5029124522B89002A8053 /* TagLabel.swift */,
+				ACA5029324522EB1002A8053 /* PeopleCountView.swift */,
 				AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */,
 				ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */,
 				ACC02C812448F80D00EED516 /* ConfirmButton.swift */,
@@ -646,20 +677,25 @@
 				AC5E37F3244CD82000FFDADD /* UIViewControllerExtensions.swift in Sources */,
 				AC292DBE24508E4F00526387 /* OrdersNC.swift in Sources */,
 				AC2708862448B77400F322F8 /* SceneDelegate.swift in Sources */,
+				ACA5029424522EB1002A8053 /* PeopleCountView.swift in Sources */,
 				AC5E37EF244CD1EE00FFDADD /* AuthorizationModel.swift in Sources */,
 				ACC02C862448FD1400EED516 /* TitleLabel.swift in Sources */,
 				ACC02C842448FA9500EED516 /* EnterPhoneTextField.swift in Sources */,
+				ACA5028E2451E66F002A8053 /* OrderCell.swift in Sources */,
 				AC99F3DD244B3AF3008CBCC3 /* RoundedShadowTextField.swift in Sources */,
 				ACC02C7F2448F27800EED516 /* AuthProtocols.swift in Sources */,
 				AC5E37EA244CC75400FFDADD /* VerifyPhoneModel.swift in Sources */,
 				AC292DB62450898900526387 /* OrdersProtocols.swift in Sources */,
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
+				ACA5028C2451E4CA002A8053 /* OrderTVItem.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
 				AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */,
 				AC5E37F1244CD32300FFDADD /* UserStateService.swift in Sources */,
 				AC292DC1245090D800526387 /* Order.swift in Sources */,
 				AC2708BF2448BBCF00F322F8 /* AuthEnterPhoneController.swift in Sources */,
+				ACA5029224522B89002A8053 /* TagLabel.swift in Sources */,
 				AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */,
+				ACA502902451F498002A8053 /* DateExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
