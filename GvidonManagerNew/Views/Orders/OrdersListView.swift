@@ -24,11 +24,11 @@ final class OrdersListView: UIView, OrdersListViewProtocol {
                                                               orderNumber: "23456789976543",
                                                               customerCount: 3,
                                                               date: Date(),
-                                                              statusColor: .yellowStatus),
-                                                OrderTVItem(tableNumber: "531",
+                                                              statusColor: .yellowStatus)],
+                                                [OrderTVItem(tableNumber: "531",
                                                             customerName: "Андрон Розетков",
                                                             orderNumber: "73922983823232",
-                                                            customerCount: 4,
+                                                            customerCount: 24,
                                                             date: Date().addingTimeInterval(30*60),
                                                             statusColor: .yellow)]]
     
@@ -91,6 +91,18 @@ extension OrdersListView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 136
+    }
+    
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let dateText = orderTVItems[section].first?.date.dateString else { return UIView() }
+        let view = DateHeaderView()
+        view.setText(dateText)
+        return view
     }
     
     

@@ -30,6 +30,7 @@
 		AC5E37F1244CD32300FFDADD /* UserStateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37F0244CD32300FFDADD /* UserStateService.swift */; };
 		AC5E37F3244CD82000FFDADD /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E37F2244CD82000FFDADD /* UIViewControllerExtensions.swift */; };
 		AC5FF356244B55F400622C72 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC5FF355244B55F400622C72 /* GoogleService-Info.plist */; };
+		AC6A2591245312FA00A1D4B5 /* DateHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6A2590245312FA00A1D4B5 /* DateHeaderView.swift */; };
 		AC86BD052448D4DA00F22F19 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC86BD042448D4DA00F22F19 /* UIColors.swift */; };
 		AC8DC0F42448E4F5009320CE /* SF-Pro-Text-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F32448E4F5009320CE /* SF-Pro-Text-Heavy.otf */; };
 		AC8DC0F52448E4FD009320CE /* SF-Pro-Text-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */; };
@@ -107,6 +108,7 @@
 		AC5E37F0244CD32300FFDADD /* UserStateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStateService.swift; sourceTree = "<group>"; };
 		AC5E37F2244CD82000FFDADD /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		AC5FF355244B55F400622C72 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC6A2590245312FA00A1D4B5 /* DateHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHeaderView.swift; sourceTree = "<group>"; };
 		AC86BD042448D4DA00F22F19 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
 		AC8DC0F12448E4E2009320CE /* SF-Pro-Text-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Black.otf"; sourceTree = "<group>"; };
 		AC8DC0F22448E4ED009320CE /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
@@ -390,6 +392,7 @@
 				ACC02C852448FD1400EED516 /* TitleLabel.swift */,
 				ACA5029124522B89002A8053 /* TagLabel.swift */,
 				ACA5029324522EB1002A8053 /* PeopleCountView.swift */,
+				AC6A2590245312FA00A1D4B5 /* DateHeaderView.swift */,
 				AC99F3DC244B3AF3008CBCC3 /* RoundedShadowTextField.swift */,
 				ACC02C832448FA9500EED516 /* EnterPhoneTextField.swift */,
 				ACC02C812448F80D00EED516 /* ConfirmButton.swift */,
@@ -689,6 +692,7 @@
 				AC2708C22448C0B100F322F8 /* AuthEnterPhoneView.swift in Sources */,
 				ACA5028C2451E4CA002A8053 /* OrderTVItem.swift in Sources */,
 				AC2708BD2448BB5800F322F8 /* AuthNavigationController.swift in Sources */,
+				AC6A2591245312FA00A1D4B5 /* DateHeaderView.swift in Sources */,
 				AC5E37ED244CC96E00FFDADD /* AuthService.swift in Sources */,
 				AC5E37F1244CD32300FFDADD /* UserStateService.swift in Sources */,
 				AC292DC1245090D800526387 /* Order.swift in Sources */,
